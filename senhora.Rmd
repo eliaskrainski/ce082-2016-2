@@ -1,0 +1,45 @@
+---
+title: "Uma senhora toma chá"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, message=FALSE}
+require(knitr)
+options(width=25)
+```
+
+# Objetivo:
+
+Seminários onde cada dupla de alunos apresenta um dos capítulos do livro:
+
+- Salsburg, D.
+  [Uma senhora toma chá. Como a estatística revolucionou a ciência no século XX](http://www.zahar.com.br/livro/uma-senhora-toma-cha).
+  Rio de Janeiro: Zahar, 2009.
+
+Apresentações sucintas de no máximo 10 minutos
+
+# Organização dos seminários
+
+- **Tamanho de cada capítulo:** 
+
+```{r pags, echo=TRUE}
+pgs <- c(17, 24, 36, 43, 49, 58, 64, 73, 80, 89, 99, 
+         107, 113, 121, 131, 137, 144, 153, 164, 173, 
+         181, 189, 195, 203, 210, 218, 223, 231, 237)
+(len <- diff(c(pgs, 250))) ### tamanhos
+```
+
+- **Capítulos selecionados:**
+```{r caps, echo=TRUE}
+(caps <- c(2:(length(len)-1))[len[-c(1,29)]>6])
+```
+
+
+
+<!-- links -->
+
+[Fernando de Pol Mayer]: https://fernandomayer.github.io
+[LEG]: http://www.leg.ufpr.br
+[Resolução 49/15 - CEPE]: http://www.ufpr.br/soc/descarregar_arquivo.php?cod=1064
