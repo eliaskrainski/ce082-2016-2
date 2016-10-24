@@ -35,6 +35,8 @@ navbar:
         href: 00_ce082-intro.html
       - text: "Como mentir com estatística"
         href: 02_sem_CME.html
+      - text: "Uma Senhora Toma Chá"
+        href: senhora.html
   right:
     - text: GitHub
       icon: fa-github fa-lg

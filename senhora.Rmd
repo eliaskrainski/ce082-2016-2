@@ -6,8 +6,8 @@ output:
 ---
 
 ```{r setup, message=FALSE}
-require(knitr)
 options(width=25)
+source("setup_knitr.R")
 ```
 
 # Objetivo:
