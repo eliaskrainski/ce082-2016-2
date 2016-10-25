@@ -298,7 +298,7 @@ source(&quot;setup_knitr.R&quot;)</code></pre>
 </ul>
 <pre class="r"><code>cap.g &lt;- c(17, 2, 7, 14, 5, 10, 13, 20, 11, 16, 3, 19, 25, 18, 8, 9, 21, 24, 23, 27)
 o.gr &lt;- order(cap.g)
-kable(matrix(paste0(&#39;C&#39;, 1:length(caps), &#39; -&gt; G&#39;, o.gr),
+kable(matrix(paste0(&#39;C&#39;, caps, &#39; -&gt; G&#39;, o.gr),
              ncol=5, byrow=TRUE,
              dimnames=list(7*(1:4), 1:5)))</code></pre>
 <table>
@@ -315,35 +315,35 @@ kable(matrix(paste0(&#39;C&#39;, 1:length(caps), &#39; -&gt; G&#39;, o.gr),
 <tbody>
 <tr class="odd">
 <td align="left">7</td>
-<td align="left">C1 -&gt; G2</td>
-<td align="left">C2 -&gt; G11</td>
-<td align="left">C3 -&gt; G5</td>
-<td align="left">C4 -&gt; G3</td>
-<td align="left">C5 -&gt; G15</td>
+<td align="left">C2 -&gt; G2</td>
+<td align="left">C3 -&gt; G11</td>
+<td align="left">C5 -&gt; G5</td>
+<td align="left">C7 -&gt; G3</td>
+<td align="left">C8 -&gt; G15</td>
 </tr>
 <tr class="even">
 <td align="left">14</td>
-<td align="left">C6 -&gt; G16</td>
-<td align="left">C7 -&gt; G6</td>
-<td align="left">C8 -&gt; G9</td>
-<td align="left">C9 -&gt; G7</td>
-<td align="left">C10 -&gt; G4</td>
+<td align="left">C9 -&gt; G16</td>
+<td align="left">C10 -&gt; G6</td>
+<td align="left">C11 -&gt; G9</td>
+<td align="left">C13 -&gt; G7</td>
+<td align="left">C14 -&gt; G4</td>
 </tr>
 <tr class="odd">
 <td align="left">21</td>
-<td align="left">C11 -&gt; G10</td>
-<td align="left">C12 -&gt; G1</td>
-<td align="left">C13 -&gt; G14</td>
-<td align="left">C14 -&gt; G12</td>
-<td align="left">C15 -&gt; G8</td>
+<td align="left">C16 -&gt; G10</td>
+<td align="left">C17 -&gt; G1</td>
+<td align="left">C18 -&gt; G14</td>
+<td align="left">C19 -&gt; G12</td>
+<td align="left">C20 -&gt; G8</td>
 </tr>
 <tr class="even">
 <td align="left">28</td>
-<td align="left">C16 -&gt; G17</td>
-<td align="left">C17 -&gt; G19</td>
-<td align="left">C18 -&gt; G18</td>
-<td align="left">C19 -&gt; G13</td>
-<td align="left">C20 -&gt; G20</td>
+<td align="left">C21 -&gt; G17</td>
+<td align="left">C23 -&gt; G19</td>
+<td align="left">C24 -&gt; G18</td>
+<td align="left">C25 -&gt; G13</td>
+<td align="left">C27 -&gt; G20</td>
 </tr>
 </tbody>
 </table>

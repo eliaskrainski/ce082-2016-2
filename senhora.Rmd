@@ -41,7 +41,7 @@ pgs <- c(17, 24, 36, 43, 49, 58, 64, 73, 80, 89, 99,
 ```{r tabela, echo=TRUE}
 cap.g <- c(17, 2, 7, 14, 5, 10, 13, 20, 11, 16, 3, 19, 25, 18, 8, 9, 21, 24, 23, 27)
 o.gr <- order(cap.g)
-kable(matrix(paste0('C', 1:length(caps), ' -> G', o.gr),
+kable(matrix(paste0('C', caps, ' -> G', o.gr),
              ncol=5, byrow=TRUE,
              dimnames=list(7*(1:4), 1:5)))
 ```
