@@ -37,12 +37,12 @@ pgs <- c(17, 24, 36, 43, 49, 58, 64, 73, 80, 89, 99,
 ```
 
 
-- **Atribuição dos capítulos**
+- **Atribuição dos capítulos às duplas**
 ```{r tabela, echo=TRUE}
 cap.g <- c(21, 2, 7, 14, 5, 27, 13, 20, 10, 11, 3, 17, 25, 19, 8, 9, 18, 24, 16, 23)
 
 o.gr <- order(cap.g)
-kable(matrix(paste0('C', caps, ' -> G', o.gr),
+kable(matrix(paste0('Cap', caps, ' -> Dup', o.gr),
              ncol=5, byrow=TRUE,
              dimnames=list(paste0(7*(1:4),'/11'), 1:5)))
 ```

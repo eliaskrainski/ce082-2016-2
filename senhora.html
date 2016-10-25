@@ -294,12 +294,12 @@ source(&quot;setup_knitr.R&quot;)</code></pre>
  [8] 11 13 14 16 17 18 19
 [15] 20 21 23 24 25 27</code></pre>
 <ul>
-<li><strong>Atribuição dos capítulos</strong></li>
+<li><strong>Atribuição dos capítulos às duplas</strong></li>
 </ul>
 <pre class="r"><code>cap.g &lt;- c(21, 2, 7, 14, 5, 27, 13, 20, 10, 11, 3, 17, 25, 19, 8, 9, 18, 24, 16, 23)
 
 o.gr &lt;- order(cap.g)
-kable(matrix(paste0(&#39;C&#39;, caps, &#39; -&gt; G&#39;, o.gr),
+kable(matrix(paste0(&#39;Cap&#39;, caps, &#39; -&gt; Dup&#39;, o.gr),
              ncol=5, byrow=TRUE,
              dimnames=list(paste0(7*(1:4),&#39;/11&#39;), 1:5)))</code></pre>
 <table>
@@ -316,35 +316,35 @@ kable(matrix(paste0(&#39;C&#39;, caps, &#39; -&gt; G&#39;, o.gr),
 <tbody>
 <tr class="odd">
 <td align="left">7/11</td>
-<td align="left">C2 -&gt; G2</td>
-<td align="left">C3 -&gt; G11</td>
-<td align="left">C5 -&gt; G5</td>
-<td align="left">C7 -&gt; G3</td>
-<td align="left">C8 -&gt; G15</td>
+<td align="left">Cap2 -&gt; Dup2</td>
+<td align="left">Cap3 -&gt; Dup11</td>
+<td align="left">Cap5 -&gt; Dup5</td>
+<td align="left">Cap7 -&gt; Dup3</td>
+<td align="left">Cap8 -&gt; Dup15</td>
 </tr>
 <tr class="even">
 <td align="left">14/11</td>
-<td align="left">C9 -&gt; G16</td>
-<td align="left">C10 -&gt; G9</td>
-<td align="left">C11 -&gt; G10</td>
-<td align="left">C13 -&gt; G7</td>
-<td align="left">C14 -&gt; G4</td>
+<td align="left">Cap9 -&gt; Dup16</td>
+<td align="left">Cap10 -&gt; Dup9</td>
+<td align="left">Cap11 -&gt; Dup10</td>
+<td align="left">Cap13 -&gt; Dup7</td>
+<td align="left">Cap14 -&gt; Dup4</td>
 </tr>
 <tr class="odd">
 <td align="left">21/11</td>
-<td align="left">C16 -&gt; G19</td>
-<td align="left">C17 -&gt; G12</td>
-<td align="left">C18 -&gt; G17</td>
-<td align="left">C19 -&gt; G14</td>
-<td align="left">C20 -&gt; G8</td>
+<td align="left">Cap16 -&gt; Dup19</td>
+<td align="left">Cap17 -&gt; Dup12</td>
+<td align="left">Cap18 -&gt; Dup17</td>
+<td align="left">Cap19 -&gt; Dup14</td>
+<td align="left">Cap20 -&gt; Dup8</td>
 </tr>
 <tr class="even">
 <td align="left">28/11</td>
-<td align="left">C21 -&gt; G1</td>
-<td align="left">C23 -&gt; G20</td>
-<td align="left">C24 -&gt; G18</td>
-<td align="left">C25 -&gt; G13</td>
-<td align="left">C27 -&gt; G6</td>
+<td align="left">Cap21 -&gt; Dup1</td>
+<td align="left">Cap23 -&gt; Dup20</td>
+<td align="left">Cap24 -&gt; Dup18</td>
+<td align="left">Cap25 -&gt; Dup13</td>
+<td align="left">Cap27 -&gt; Dup6</td>
 </tr>
 </tbody>
 </table>
