@@ -296,7 +296,8 @@ source(&quot;setup_knitr.R&quot;)</code></pre>
 <ul>
 <li><strong>Atribuição dos capítulos</strong></li>
 </ul>
-<pre class="r"><code>cap.g &lt;- c(17, 2, 7, 14, 5, 10, 13, 20, 11, 16, 3, 19, 25, 18, 8, 9, 21, 24, 23, 27)
+<pre class="r"><code>cap.g &lt;- c(21, 2, 7, 14, 5, 27, 13, 20, 10, 11, 3, 17, 25, 19, 8, 9, 18, 24, 16, 23)
+
 o.gr &lt;- order(cap.g)
 kable(matrix(paste0(&#39;C&#39;, caps, &#39; -&gt; G&#39;, o.gr),
              ncol=5, byrow=TRUE,
@@ -324,26 +325,26 @@ kable(matrix(paste0(&#39;C&#39;, caps, &#39; -&gt; G&#39;, o.gr),
 <tr class="even">
 <td align="left">14/11</td>
 <td align="left">C9 -&gt; G16</td>
-<td align="left">C10 -&gt; G6</td>
-<td align="left">C11 -&gt; G9</td>
+<td align="left">C10 -&gt; G9</td>
+<td align="left">C11 -&gt; G10</td>
 <td align="left">C13 -&gt; G7</td>
 <td align="left">C14 -&gt; G4</td>
 </tr>
 <tr class="odd">
 <td align="left">21/11</td>
-<td align="left">C16 -&gt; G10</td>
-<td align="left">C17 -&gt; G1</td>
-<td align="left">C18 -&gt; G14</td>
-<td align="left">C19 -&gt; G12</td>
+<td align="left">C16 -&gt; G19</td>
+<td align="left">C17 -&gt; G12</td>
+<td align="left">C18 -&gt; G17</td>
+<td align="left">C19 -&gt; G14</td>
 <td align="left">C20 -&gt; G8</td>
 </tr>
 <tr class="even">
 <td align="left">28/11</td>
-<td align="left">C21 -&gt; G17</td>
-<td align="left">C23 -&gt; G19</td>
+<td align="left">C21 -&gt; G1</td>
+<td align="left">C23 -&gt; G20</td>
 <td align="left">C24 -&gt; G18</td>
 <td align="left">C25 -&gt; G13</td>
-<td align="left">C27 -&gt; G20</td>
+<td align="left">C27 -&gt; G6</td>
 </tr>
 </tbody>
 </table>
