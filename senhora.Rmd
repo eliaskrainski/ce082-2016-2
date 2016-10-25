@@ -43,7 +43,7 @@ cap.g <- c(17, 2, 7, 14, 5, 10, 13, 20, 11, 16, 3, 19, 25, 18, 8, 9, 21, 24, 23,
 o.gr <- order(cap.g)
 kable(matrix(paste0('C', caps, ' -> G', o.gr),
              ncol=5, byrow=TRUE,
-             dimnames=list(7*(1:4), 1:5)))
+             dimnames=list(paste0(7*(1:4),'/11'), 1:5)))
 ```
 
 
