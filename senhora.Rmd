@@ -46,10 +46,11 @@ cap.g <- c(21, 2, 7, 14, 5, 27, 13, 20, 10, 11, 3, 17, 25, 19, 8, 9, 18, 24, 16,
 o.gr <- order(cap.g)
 time <- c('20:45', '20:57', '21:09', '21:21', '21:32', '21:43')
 text <- paste0('Cap', caps, ' -> Dup', o.gr) 
-text <- c(rep('*', 3), text, '**')
+text <- c(rep('*', 3), text, '')
 kable(matrix(text, ncol=6, byrow=TRUE,
              dimnames=list(paste0('Dia ', c(7*c(1, 3:4), 5), rep(c('/11','/12'), c(3,1))), time)))
 ```
+* -> Apresentação de Rômulo
 
 ```
 Dupla 1 : 20160206 20160211 

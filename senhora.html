@@ -302,7 +302,7 @@ source(&quot;setup_knitr.R&quot;)</code></pre>
 o.gr &lt;- order(cap.g)
 time &lt;- c(&#39;20:45&#39;, &#39;20:57&#39;, &#39;21:09&#39;, &#39;21:21&#39;, &#39;21:32&#39;, &#39;21:43&#39;)
 text &lt;- paste0(&#39;Cap&#39;, caps, &#39; -&gt; Dup&#39;, o.gr) 
-text &lt;- c(rep(&#39;*&#39;, 3), text, &#39;**&#39;)
+text &lt;- c(rep(&#39;*&#39;, 3), text, &#39;&#39;)
 kable(matrix(text, ncol=6, byrow=TRUE,
              dimnames=list(paste0(&#39;Dia &#39;, c(7*c(1, 3:4), 5), rep(c(&#39;/11&#39;,&#39;/12&#39;), c(3,1))), time)))</code></pre>
 <table>
@@ -352,7 +352,16 @@ kable(matrix(text, ncol=6, byrow=TRUE,
 <td align="left">Cap24 -&gt; Dup18</td>
 <td align="left">Cap25 -&gt; Dup13</td>
 <td align="left">Cap27 -&gt; Dup6</td>
-<td align="left">**</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">* -&gt; Apresen</td>
+<td align="left">tação de Rômulo</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
